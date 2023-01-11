@@ -14,6 +14,7 @@ struct Args {
 fn main() {
     let args = Args::parse();
     let mut project_name: String = String::new();
+    println!("Enter project name:");
     std::io::stdin()
         .read_line(&mut project_name)
         .expect("Error while reading project name!");
